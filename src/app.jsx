@@ -1,5 +1,9 @@
 import React from 'react';
+
+import Agenda from './components/agenda';
 import Day from './components/day';
+import Meeting from './components/meeting';
+
 import Button from './components/button';
 import Dropdown from './components/dropdown';
 
@@ -11,44 +15,46 @@ import Dropdown from './components/dropdown';
 class App extends React.Component {
 
     constructor(props) {
+
         super(props);
 
-        // this.
+        this.days = [
+            { name: "Monday" },
+            { name: "Tuesday" },
+            { name: "Wednesday" },
+            { name: "Thursday" },
+            { name: "Friday" },
+            {
+                name: "Saturday",
+                weekend: "true"
+            },
+            {
+                name: "Sunday",
+                weekend: "true"
+            }
+        ];
+
+        this.state = {
+            content: ''
+        };
+
     }
+    renderDay(currentDay, i) {
+        return (
+            <Day
+                key={i}
+                name={currentDay.name}
+                weekend={currentDay.weekend}
+            />
+        );
+    }
+
 
     render() {
         return (
-            <div className="app">
-                MD2 React app om te oefenen
-                <Dropdown 
-                    label="element 6"
-                />
-                <Day
-                    name="Monday"
-                />
-                <Day
-                    name="Tuesday"
-                />
-                <Day
-                    name="Wednesday"
-                />
-                <Day
-                    name="Thursday"
-                />
-                <Day
-                    name="Friday"
-                />
-                <Day
-                    name="Saturday"
-                    weekend="true"
-                />
-                <Day
-                    name="Sunday"
-                />
-                <Button
-                    
-                    />
-            </div>
+            <Agenda>
+                {this.days.map(this.renderDay)}
+            </Agenda>
         );
     }
 

@@ -1,0 +1,11 @@
+.agenda {
+    height: 100%;
+    display: inline-block;
+}
+
+.agenda__content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-gap: 10px;
+}

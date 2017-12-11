@@ -10,15 +10,22 @@ class Day extends React.Component {
     constructor(props) {
         super(props);
     }
+    ifWeekend(){
+        if(this.props.weekend) {
+            console.log('iets');
+        }
+    }
 
     render() {
         return (
-            <div className="week">
-                <div className="week__name">
+            <div className="day">
+                <h2 className="day__name">
                     {this.props.name}
-                </div>
-                <div className="week__delete">
-                    Delete
+                </h2>
+                {this.ifWeekend()}
+                <div className="day__content">
+                    <div className="">
+                    </div>
                 </div>
             </div>
         );

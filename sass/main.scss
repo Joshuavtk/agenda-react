@@ -15,6 +15,7 @@
 /*
  | GENERIC: CSS resets, normalize
  */
+@import 'generic/_generic.reset';
 
 /*
  | ELEMENTS: Base styling for unclassed HTML elements (h1, anchor, etc.)
@@ -27,9 +28,9 @@
 /*
  | COMPONENTS
  */
-@import 'components/_components.student';
-@import 'components/_components.studentdetail';
 @import 'components/_components.day';
+@import 'components/_components.agenda';
+@import 'components/_components.meeting';
 
 @import 'components/_components.button';
 @import 'components/_components.dropdown';
