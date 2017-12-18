@@ -1,7 +1,85 @@
-.test--enabled {
-  background: green;
-  width: 100px;
-  height: 100px;
-  position: absolute; }
+/*
+ | ITCSS STRUCTURE: naming convention _<layer>.<partial>.scss
+ */
+/*
+ | SETTINGS: base font size, colour palettes
+ */
+body {
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/*
+ | TOOLS: mixins and functions
+ */
+/*
+ | GENERIC: CSS resets, normalize
+ */
+body, html, h1, h2, h3, h4, h5, p {
+  padding: 0;
+  margin: 0; }
+
+/*
+ | ELEMENTS: Base styling for unclassed HTML elements (h1, anchor, etc.)
+ */
+/*
+ | OBJECTS: NON cosmetic objects
+ */
+/*
+ | COMPONENTS
+ */
+.day {
+  height: 100%; }
+
+.day__name {
+  background-color: #95b5eb;
+  text-align: center; }
+
+.day__content {
+  background-color: cornflowerblue;
+  grid-row: 2;
+  grid-column: 1;
+  height: 700px;
+  overflow-y: scroll;
+  width: 200px; }
+
+.agenda {
+  height: 100%;
+  display: inline-block; }
+
+.agenda__content {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto 1fr; }
+
+.button {
+  position: fixed;
+  background: #0198df;
+  color: white;
+  padding: 10px;
+  z-index: 11000;
+  transition: linear 1s; }
+
+.dropdown {
+  border: 1px solid #8bb63d;
+  width: 150px;
+  border-radius: 3px;
+  position: relative; }
+  .dropdown:hover {
+    background: #d4e7f6; }
+  .dropdown__header {
+    padding: 5px; }
+  .dropdown__options {
+    position: absolute;
+    top: 32px;
+    width: 150px;
+    z-index: 10000; }
+  .dropdown__option {
+    padding: 5px;
+    background: #8bb63d; }
+    .dropdown__option:hover {
+      background: #9bc944; }
+
+/*
+ | TRUMPS: utility and helper classes, hacks and overrides
+ */
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlUm9vdCI6IiJ9*/

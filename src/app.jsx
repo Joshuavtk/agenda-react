@@ -22,37 +22,37 @@ class App extends React.Component {
                 name: "Sunday",
                 weekend: "true",
                 meetings: [
-                    { name: 'Going to the store', details: 'Details meeting 1', time: '10:00' }
+                    { name: 'Going to the store', details: 'Details meeting 1', time: '1000' }
                 ]
             },
             {
                 name: "Monday",
                 meetings: [
-                    { name: 'To the movies', details: 'Details meeting 1', time: '12:00' }
+                    { name: 'To the movies', details: 'Details meeting 1', time: '1200' }
                 ]
             },
             {
                 name: "Tuesday",
                 meetings: [
-                    { name: 'firstMeeting', details: 'Details meeting 1', time: '12:00' }
+                    { name: 'firstMeeting', details: 'Details meeting 1', time: '1200' }
                 ]
             },
             {
                 name: "Wednesday",
                 meetings: [
-                    { name: 'firstMeeting', details: 'Details meeting 1', time: '12:00' }
+                    { name: 'firstMeeting', details: 'Details meeting 1', time: '1200' }
                 ]
             },
             {
                 name: "Thursday",
                 meetings: [
-                    { name: 'firstMeeting', details: 'Details meeting 1', time: '12:00' }
+                    { name: 'firstMeeting', details: 'Details meeting 1', time: '1200' }
                 ]
             },
             {
                 name: "Friday",
                 meetings: [
-                    { name: 'firstMeeting', details: 'Details meeting 1', time: '12:00' }
+                    { name: 'firstMeeting', details: 'Details meeting 1', time: '1200' }
                 ]
             },
             {

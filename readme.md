@@ -1,7 +1,5 @@
-# MD2 start met React
+# Agenda opdracht met React.JS
 
-* clone deze repository naar je computer
+Deze opdracht is in samenwerking met Link Dichiara en Joshua van 't Kruis gemaakt.
 
-* voer `npm install` uit in de hoofdfolder
-
-* start de server met `npm start`. De server draait dan op localhost:8080. Let wel op dat je eigen project dan niet moet runnen want er kan maar 1 server op poort 8080 werken.
+Link naar de live omgeving: http://22288.hosts.ma-cloud.nl/bewijzenmap/p2.1/agenda/

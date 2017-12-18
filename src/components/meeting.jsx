@@ -12,8 +12,14 @@ class Meeting extends React.Component {
     }
 
     render() {
+        const styles = {
+            top: parseInt(this.props.time)
+        };
+
         return (
-            <div className="meeting">
+            <div className="meeting"
+                style={styles}
+                onClick={e => showDescription()}>
                 <h3 className="meeting__name">
                     {this.props.name}
                 </h3>
