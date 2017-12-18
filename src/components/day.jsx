@@ -1,4 +1,5 @@
 import React from 'react';
+import Meeting from './meeting';
 
 /**
  * Student component
@@ -15,8 +16,21 @@ class Day extends React.Component {
             console.log('iets');
         }
     }
+    
+    renderMeeting(currentMeeting, i) {
+        return (
+            <Meeting
+                key={i}
+                name={currentMeeting.name}
+                time={currentMeeting.time}
+                details={currentMeeting.details}
+            />
+        );
+    }
 
     render() {
+        const meetings = this.props.meetings || [];
+
         return (
             <div className="day">
                 <h2 className="day__name">
@@ -24,8 +38,7 @@ class Day extends React.Component {
                 </h2>
                 {this.ifWeekend()}
                 <div className="day__content">
-                    <div className="">
-                    </div>
+                    {meetings.map(this.renderMeeting)}
                 </div>
             </div>
         );

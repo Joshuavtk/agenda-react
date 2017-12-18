@@ -14,11 +14,11 @@ class Meeting extends React.Component {
     render() {
         return (
             <div className="meeting">
-                <h3 className="week__name">
-                    Meeting
+                <h3 className="meeting__name">
+                    {this.props.name}
                 </h3>
                 <div className="meeting__content">
-                    {this.props.children}
+                    {this.props.details}
                 </div>
             </div>
         );
