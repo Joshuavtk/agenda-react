@@ -11,11 +11,6 @@ class Day extends React.Component {
     constructor(props) {
         super(props);
     }
-    ifWeekend(){
-        if(this.props.weekend) {
-            console.log('iets');
-        }
-    }
     
     renderMeeting(currentMeeting, i) {
         return (
@@ -36,7 +31,6 @@ class Day extends React.Component {
                 <h2 className="day__name">
                     {this.props.name}
                 </h2>
-                {this.ifWeekend()}
                 <div className="day__content">
                     {meetings.map(this.renderMeeting)}
                 </div>

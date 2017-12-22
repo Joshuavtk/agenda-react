@@ -5,6 +5,14 @@
 
 .agenda__content {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: 0.2fr repeat(7, 1fr);
     grid-template-rows: auto 1fr;
+}
+
+.agenda__time {
+    text-align: right;
+}
+
+.agenda__time p {
+    padding-bottom: 15.5px;
 }

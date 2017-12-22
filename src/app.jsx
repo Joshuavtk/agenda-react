@@ -14,58 +14,47 @@ import Dropdown from './components/dropdown';
 class App extends React.Component {
 
     constructor(props) {
-
         super(props);
 
         this.days = [
-            {
-                name: "Sunday",
-                weekend: "true",
-                meetings: [
-                    { name: 'Going to the store', details: 'Details meeting 1', time: '1000' }
-                ]
-            },
+            { name: "Sunday" },
             {
                 name: "Monday",
                 meetings: [
-                    { name: 'To the movies', details: 'Details meeting 1', time: '1200' }
+                    { name: 'Going to the store', details: 'Don\'t forget the eggs', time: '1000' },
+                    { name: 'To the movies', details: 'Don\'t forget money for the tickets', time: '1500' }
                 ]
             },
             {
                 name: "Tuesday",
                 meetings: [
-                    { name: 'firstMeeting', details: 'Details meeting 1', time: '1200' }
+                    { name: 'Waking up', details: 'Set the alarm clock', time: '750' },
+                    { name: 'Meeting', details: 'Meeting with Link Dichiara', time: '2300' }
                 ]
             },
             {
                 name: "Wednesday",
                 meetings: [
-                    { name: 'firstMeeting', details: 'Details meeting 1', time: '1200' }
+                    { name: 'Meeting', details: 'Meeting with Joshua van \'t Kruis', time: '1200' }
                 ]
             },
             {
                 name: "Thursday",
                 meetings: [
-                    { name: 'firstMeeting', details: 'Details meeting 1', time: '1200' }
+                    { name: 'Work', details: 'Finish the agenda task', time: '900' }
                 ]
             },
             {
                 name: "Friday",
                 meetings: [
-                    { name: 'firstMeeting', details: 'Details meeting 1', time: '1200' }
+                    { name: 'Going to the store', details: 'Don\'t forget to buy a banana', time: '1400' },
+                    { name: 'Learning', details: 'Finish the React Codecademy course', time: '1100' }
                 ]
             },
-            {
-                name: "Saturday",
-                weekend: "true"
-            }
+            { name: "Saturday" }
         ];
-
-        this.state = {
-            content: ''
-        };
-
     }
+
     renderDay(currentDay, i) {
         return (
             <Day
@@ -77,7 +66,6 @@ class App extends React.Component {
             />
         );
     }
-
 
     render() {
         return (

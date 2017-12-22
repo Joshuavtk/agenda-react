@@ -9,22 +9,34 @@ class Meeting extends React.Component {
 
     constructor(props) {
         super(props);
+
+        this.state = {
+            content: ''
+        };
+    }
+
+    showDescription() {
+        if (this.state.content === "") {
+            this.setState({content: this.props.details});
+        } else {
+            this.setState({content: ""});
+        }
     }
 
     render() {
         const styles = {
-            top: parseInt(this.props.time)
+            top: 90 + parseInt(this.props.time) / (2400 / 888)
         };
 
         return (
             <div className="meeting"
                 style={styles}
-                onClick={e => showDescription()}>
+                onClick={e => this.showDescription()}>
                 <h3 className="meeting__name">
                     {this.props.name}
                 </h3>
                 <div className="meeting__content">
-                    {this.props.details}
+                    {this.state.content}
                 </div>
             </div>
         );
